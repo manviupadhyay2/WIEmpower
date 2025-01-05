@@ -9,6 +9,7 @@ import Timeline from './components/Timeline';
 import Hero from './components/Hero';
 import About from './components/About';
 import Theme from './components/Theme';
+import PastEvents from './components/PastEvents';
 
 const Wiempower = () => {  // Change this to an uppercase 'W'
     useEffect(() => {
@@ -59,6 +60,7 @@ const Wiempower = () => {  // Change this to an uppercase 'W'
             <Header />
             <Hero />
             <About />
+            <PastEvents/>
             <Timeline />
             <Theme/>
             <SpeakerSection />
