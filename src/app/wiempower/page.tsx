@@ -6,6 +6,8 @@ import Faq from './components/Faq';
 import Judges from './components/Judges';
 import SpeakerSection from './components/Speaker';
 import Timeline from './components/Timeline';
+import Hero from './components/Hero';
+import About from './components/About';
 
 const wiempower = () => {
     useEffect(() => {
@@ -55,6 +57,8 @@ const wiempower = () => {
             <div id="cursor-blur"></div>
 
             <Header />
+            <Hero />
+            <About/>
             <Timeline />
             <SpeakerSection />
             <Judges />
