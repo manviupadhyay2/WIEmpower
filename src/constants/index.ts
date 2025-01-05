@@ -54,6 +54,15 @@ import speaker4 from "@/assets/extraPics/admin.jpg"
 import ieeeLogo from "@/assets/logos/white_logo.png"
 import wieLogo from "@/assets/logos/wieLogo.png"
 
+import pastEvent1 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent2 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent3 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent4 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent5 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent6 from "@/assets/sliderPhotos/event1_img2.jpg"
+import pastEvent7 from "@/assets/sliderPhotos/event1_img2.jpg"
+
+
 export const TEAM = [
   {
       role: "IEEE Chairperson",
@@ -454,3 +463,5 @@ export const TIMELINE = [
   }
 
 ]
+
+export const PASTEVENTS = [pastEvent1,pastEvent2,pastEvent3,pastEvent4,pastEvent5,pastEvent6,pastEvent7]
