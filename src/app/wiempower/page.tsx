@@ -9,7 +9,7 @@ import Timeline from './components/Timeline';
 import Hero from './components/Hero';
 import About from './components/About';
 
-const wiempower = () => {
+const Wiempower = () => {  // Change this to an uppercase 'W'
     useEffect(() => {
         const crsr = document.getElementById("cursor");
         const blur = document.getElementById("cursor-blur");
@@ -41,7 +41,6 @@ const wiempower = () => {
             }
         };
 
-
         const throttledMouseMove = throttle(handleMouseMove, 50);
 
         document.addEventListener("mousemove", throttledMouseMove);
@@ -58,7 +57,7 @@ const wiempower = () => {
 
             <Header />
             <Hero />
-            <About/>
+            <About />
             <Timeline />
             <SpeakerSection />
             <Judges />
@@ -68,4 +67,4 @@ const wiempower = () => {
     );
 };
 
-export default wiempower;
+export default Wiempower;

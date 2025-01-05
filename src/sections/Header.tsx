@@ -51,7 +51,7 @@ const Socials = [
     {
         name: "Email",
         icon: <FaEnvelope size={iconSize} color="#ffffff" />,
-        link: "#", 
+        link: "#",
         hoverColor: "#d44638",
         onClick: handleEmailClick
     },
@@ -244,7 +244,7 @@ const Navbar = () => {
                         </div>
 
                         <div>
-                            <Link href="/wiempower" passHref>
+                            <Link href="/Wiempower" passHref>
                                 <button>
                                     WIEmpower
                                 </button>
