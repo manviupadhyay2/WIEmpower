@@ -11,7 +11,6 @@ const formatName = (name: string) => {
     const parts = name.split(' ');
     return parts.map((part: string) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()).join(' ');
 };
-
 const Judges = () => {
     useEffect(() => {
         AOS.init({ duration: 1000 });
