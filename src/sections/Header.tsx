@@ -244,14 +244,12 @@ const Navbar = () => {
                         </div>
 
                         <div>
-                            <Link href="/Wiempower" passHref>
+                            <Link href="/wiempower" passHref>
                                 <button>
                                     WIEmpower
                                 </button>
                             </Link>
                         </div>
-
-
                         <div
                             onClick={() => handleCustomScroll('contact-us')}
                             className={navLinkClass('contact-us')}
