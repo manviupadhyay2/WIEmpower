@@ -1,17 +1,20 @@
-'use client'
-import Footer from '@/sections/Footer'
+// page.tsx
+'use client'; // <-- Add this line to mark the file as a client-side component
+
 import React, { useEffect } from 'react';
 import Header from "@/app/wiempower/components/Header";
-import Faq from './components/Faq';
-import Judges from './components/Judges';
-import SpeakerSection from './components/Speaker';
-import Timeline from './components/Timeline';
 import Hero from './components/Hero';
 import About from './components/About';
-import Theme from './components/Theme';
 import PastEvents from './components/PastEvents';
+import Timeline from './components/Timeline';
+import Theme from './components/Theme';
+import SpeakerSection from './components/Speaker';
+import Judges from './components/Judges';
+import Faq from './components/Faq';
+import Footer from '@/sections/Footer';
+import BackToTop from './components/BackToTop';
 
-const Wiempower = () => {  // Change this to an uppercase 'W'
+const Wiempower = () => {
     useEffect(() => {
         const crsr = document.getElementById("cursor");
         const blur = document.getElementById("cursor-blur");
@@ -60,13 +63,14 @@ const Wiempower = () => {  // Change this to an uppercase 'W'
             <Header />
             <Hero />
             <About />
-            <PastEvents/>
+            <PastEvents />
             <Timeline />
-            <Theme/>
+            <Theme />
             <SpeakerSection />
             <Judges />
             <Faq />
             <Footer />
+            <BackToTop /> {/* Add BackToTopButton here */}
         </>
     );
 };
