@@ -1,5 +1,5 @@
 'use client';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from "@/sections/Header";
 import Footer from '@/sections/Footer';
 import Hero from '@/sections/Hero';
@@ -9,9 +9,16 @@ import AboutSb from '@/sections/AboutSb';
 import Team from '@/sections/Team';
 import AimAndMission from '@/sections/AimAndMission';
 import Events from '@/sections/Events';
+import Loading from '@/app/Loading';
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+
     const crsr = document.getElementById("cursor");
     const blur = document.getElementById("cursor-blur");
 
@@ -42,7 +49,6 @@ const Home = () => {
       }
     };
 
-
     const throttledMouseMove = throttle(handleMouseMove, 50);
 
     document.addEventListener("mousemove", throttledMouseMove);
@@ -51,6 +57,10 @@ const Home = () => {
       document.removeEventListener("mousemove", throttledMouseMove);
     };
   }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>
