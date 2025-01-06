@@ -22,7 +22,7 @@ const About = () => {
         {/* Right Section - Image */}
         <div className="lg:w-1/2 mt-8 lg:mt-0 overflow-hidden rounded-xl shadow-2xl">
           <img
-            src={Wieimage.src}  // Access the src property of the imported image
+            src={Wieimage.src}
             alt="WIEmpower 5.0"
             className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-500 rounded-xl shadow-2xl"
           />
