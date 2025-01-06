@@ -8,43 +8,41 @@ import {
     Users,
 } from "lucide-react";
 
-// Define the type for track data
 interface Track {
-    icon: React.ElementType; // The icon component type
+    icon: React.ElementType;
     title: string;
     description: string;
 }
 
-// Mock data with types
 const TRACKS_DATA: Track[] = [
     {
         icon: Heart,
-        title: "Innovation in Healthcare",
-        description: "Develop solutions to improve healthcare accessibility, patient care, and medical technology advancements.",
+        title: "Quantum Exploration",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna nec neque tristique luctus. Integer at purus vitae arcu venenatis facilisis.",
     },
     {
         icon: Wallet,
-        title: "Fintech",
-        description: "Create innovative financial technology solutions to make banking, payments, and financial services more accessible and efficient.",
+        title: "Digital Frontiers",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec enim sit amet erat egestas accumsan a at nunc. Suspendisse sit amet sem ac ante sollicitudin.",
     },
     {
         icon: Leaf,
-        title: "Sustainable Development Goals",
-        description: "Build solutions addressing UN SDGs, focusing on climate action, clean energy, and sustainable communities.",
+        title: "Virtual Horizons",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec convallis purus in nulla placerat, sed auctor purus dignissim. Integer id orci sit amet nisl auctor suscipit.",
     },
     {
         icon: GraduationCap,
-        title: "Bridging Educational Gaps",
-        description: "Develop platforms and tools to make quality education more accessible and inclusive for all learners.",
+        title: "Innovation Unleashed",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae ligula ac turpis vehicula gravida id sed elit. Nulla facilisi. Mauris bibendum nulla et neque pretium.",
     },
     {
         icon: Users,
-        title: "Open Innovation for Social Good",
-        description: "Create solutions that address social challenges and improve community well-being through technology.",
+        title: "Future Pathways",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam malesuada, lectus eu tincidunt mollis, libero lorem tincidunt erat, id efficitur leo justo at felis.",
     },
 ];
 
-// Type for TrackCard props
+
 interface TrackCardProps {
     track: Track;
     index: number;
