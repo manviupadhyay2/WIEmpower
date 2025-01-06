@@ -134,7 +134,7 @@ const Navbar = () => {
         <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
             <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
                 <div
-                    onClick={() => handleCustomScroll('home')}
+                    onClick={() => window.location.href = '/'} // Redirect to homepage
                     className="h-auto w-auto flex flex-row items-center justify-center cursor-pointer"
                 >
                     <Image
@@ -149,10 +149,10 @@ const Navbar = () => {
                 <div className="hidden md:flex flex-grow items-center justify-center">
                     <div className="flex items-center justify-between w-[600px] h-auto border border-[rgba(112,66,248,0.38)] bg-[#0300145e] px-[20px] py-[10px] rounded-full">
                         <div
-                            onClick={() => handleCustomScroll('home')}
+                            onClick={() => window.location.href = '/'} // Redirect to homepage
                             className={navLinkClass('home')}
                         >
-                            Home
+                            IEEE IGDTUW
                         </div>
 
                         <div
@@ -185,7 +185,6 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                {/* Social Media Icons for Desktop */}
                 <div className="hidden md:flex flex-row gap-5 items-center">
                     {Socials.map((social) => (
                         <a
@@ -201,7 +200,6 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                {/* Mobile Menu Button (Hamburger) */}
                 <div
                     onClick={toggleMenu}
                     className={`md:hidden rounded-md p-2 ${isMenuOpen ? 'bg-[#a855f7]' : 'bg-transparent'} cursor-pointer`}
@@ -214,7 +212,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu */}
             <AnimatePresence>
                 {isMenuOpen && (
                     <motion.div
@@ -225,8 +222,8 @@ const Navbar = () => {
                         className="md:hidden absolute left-0 right-0 top-[65px] bg-[#030014] border border-[rgba(112,66,248,0.38)] rounded-md shadow-lg p-4 z-50"
                     >
                         <div className="flex flex-col gap-4">
-                            <div onClick={() => handleCustomScroll('home')} className="text-gray-200 cursor-pointer hover:text-[#a855f7]">
-                                Home
+                            <div onClick={() => window.location.href = '/'} className="text-gray-200 cursor-pointer hover:text-[#a855f7]">
+                                IEEE IGDTUW
                             </div>
                             <div onClick={() => handleCustomScroll('about')} className="text-gray-200 cursor-pointer hover:text-[#a855f7]">
                                 About
