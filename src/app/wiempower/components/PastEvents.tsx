@@ -14,7 +14,7 @@ const PastEvents = () => {
             <motion.div
                 className="flex"
                 animate={{
-                    x: ['0%', '-100%'], // This will slide images from left to right
+                    x: ['0%', '-100%'],
                 }}
                 transition={{
                     x: {
